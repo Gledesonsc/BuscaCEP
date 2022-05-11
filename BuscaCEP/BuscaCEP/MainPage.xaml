@@ -3,31 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BuscaCEP.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#ffd400" Padding="50" CornerRadius="0">
-            <Label Text="Burcar CEP" HorizontalTextAlignment="Center" TextColor="#002c54" FontSize="36"/>
+    <StackLayout BackgroundColor="#002c54">
+
+        <Frame x:Name="frmPrincipal" BackgroundColor="#ffd400" Padding="24" CornerRadius="0">
+            <Label Text="Consulte Seu CEP" HorizontalTextAlignment="Center" TextColor="#002c54" FontSize="36"/>
         </Frame>
+
+        <Entry x:Name="entCep" Keyboard="Numeric" TextColor="Azure" MaxLength="8" Placeholder="Digite o CEP com 8 dígitos" PlaceholderColor="#ffd400" HorizontalTextAlignment="Center"></Entry>
+
+        <Button x:Name="btnBuscar"  HorizontalOptions="Center" Text="Buscar" BackgroundColor="#ffd400" TextColor="#002c54" Clicked="btnBuscar_Clicked"></Button>
+
+
+        <Label x:Name="lblresultado"  HorizontalTextAlignment="Center" TextColor="#ffd400" FontSize="36"/>
+
+        <Label Text="Bairro" TextColor="#ffd400" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblBairro" TextColor="#ffd400" HorizontalTextAlignment="Center"></Label>
         <Label></Label>
-        <Entry x:Name="entCep" Keyboard="Numeric" MaxLength="8" TextColor="#002c54" HorizontalTextAlignment="Center" Placeholder="Digite seu cep" PlaceholderColor="#002c54" ></Entry>
+        <Label Text="Cidade" TextColor="#ffd400" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblCidade" TextColor="#ffd400" HorizontalTextAlignment="Center"></Label>
         <Label></Label>
-        <Button x:Name="btnBuscaCep" BackgroundColor="#ffd400" TextColor="#002c54" Text="Buscar" Clicked="btnBuscaCep_Clicked"></Button>
+        <Label Text="UF" TextColor="#ffd400" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblUf" TextColor="#ffd400" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="Distrito" TextColor="#ffd400" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblDistrito" TextColor="#ffd400" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="DDD" TextColor="#ffd400" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblDdd" TextColor="#ffd400" HorizontalTextAlignment="Center"></Label>
         <Label></Label>
 
-        <Label Text="Bairro" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
-        <Label x:Name="lblBairro" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
-        <Label></Label>
-        <Label Text="Cidade" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
-        <Label x:Name="lblCidade" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
-        <Label></Label>
-        <Label Text="UF" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
-        <Label x:Name="lblUf" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
-        <Label></Label>
-        <Label Text="Distrito" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
-        <Label x:Name="lblDistrito" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
-        <Label></Label>
-        <Label Text="DDD" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
-        <Label x:Name="lblDdd" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
-        <Label></Label>
     </StackLayout>
 
 </ContentPage>
