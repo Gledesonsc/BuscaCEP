@@ -28,7 +28,7 @@
         <Label Text="DDD" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
         <Label x:Name="lblDdd" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
         <Label></Label>
-
+        
     </StackLayout>
 
 </ContentPage>
