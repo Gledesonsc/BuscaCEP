@@ -4,21 +4,31 @@
              x:Class="BuscaCEP.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#ffd400" Padding="50" CornerRadius="0">
+            <Label Text="Burcar CEP" HorizontalTextAlignment="Center" TextColor="#002c54" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Label></Label>
+        <Entry x:Name="entCep" Keyboard="Numeric" MaxLength="8" TextColor="#002c54" HorizontalTextAlignment="Center" Placeholder="Digite seu cep" PlaceholderColor="#002c54" ></Entry>
+        <Label></Label>
+        <Button x:Name="btnBuscaCep" BackgroundColor="#ffd400" TextColor="#002c54" Text="Buscar" Clicked="btnBuscaCep_Clicked"></Button>
+        <Label></Label>
+
+        <Label Text="Bairro" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblBairro" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="Cidade" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblCidade" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="UF" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblUf" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="Distrito" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblDistrito" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+        <Label Text="DDD" TextColor="#002c54" HorizontalTextAlignment="Center" TextDecorations="Underline"></Label>
+        <Label x:Name="lblDdd" TextColor="#002c54" HorizontalTextAlignment="Center"></Label>
+        <Label></Label>
+
     </StackLayout>
 
 </ContentPage>
